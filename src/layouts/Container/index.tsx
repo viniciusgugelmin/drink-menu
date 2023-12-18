@@ -1,11 +1,11 @@
 import { View } from "react-native";
 
 interface IContainerProps extends React.ComponentProps<typeof View> {
-  children: React.ReactNode;
+  children?: React.ReactNode;
 }
 
 function Container({
-  children,
+  children = null,
   style = {},
   className = "",
   ...props

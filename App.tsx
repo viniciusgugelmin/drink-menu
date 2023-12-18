@@ -9,7 +9,7 @@ import { tw } from "./src/libs";
 
 import { useFonts } from "./src/hooks";
 
-import { Home, NotFound } from "./src/pages";
+import { Form, Home, NotFound, Recipes } from "./src/pages";
 
 SplashScreen.preventAutoHideAsync();
 
@@ -47,6 +47,8 @@ export default function App() {
       <SafeAreaProvider onLayout={onLayoutRootView}>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/form" element={<Form />} />
+          <Route path="/recipes" element={<Recipes />} />
           <Route path="/*" element={<NotFound />} />
         </Routes>
       </SafeAreaProvider>
